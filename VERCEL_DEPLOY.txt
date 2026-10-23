@@ -1,0 +1,22 @@
+NVRMND - VERCEL DEPLOY
+
+This ZIP is flattened so package.json is at the ZIP/project root.
+
+Recommended Vercel settings:
+- Framework Preset: Vite
+- Root Directory: ./ (leave blank/default)
+- Install Command: npm install (or automatic)
+- Build Command: npm run build
+- Output Directory: dist
+
+DEPLOY FROM GITHUB:
+1. Upload/push ALL files from this folder to the ROOT of your GitHub repository.
+2. In Vercel choose Add New > Project and import that repository.
+3. Framework Preset = Vite.
+4. Do not set a nested Root Directory.
+5. Deploy.
+
+IMPORTANT:
+Do not upload only the outer folder from the older ZIP. package.json must be directly in the selected Vercel Root Directory.
+
+SPA routing is already configured in vercel.json so /admin and refreshed React Router URLs resolve to index.html.
